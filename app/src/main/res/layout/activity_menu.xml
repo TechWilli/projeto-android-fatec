@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="206dp" />
+
+    <Button
+        android:id="@+id/btlistusu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTAR ALUNOS" />
+
+    <Button
+        android:id="@+id/btlistusuParam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PESQUISAR ALUNO" />
+
+    <Button
+        android:id = "@+id/btnovousu"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "NOVO ALUNO" />
+
+    <TextView
+        android:id="@+id/lbUsuLogado"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="@string/lbusuariologado" />
+
+</LinearLayout>
