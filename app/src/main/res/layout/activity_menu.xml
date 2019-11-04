@@ -6,32 +6,60 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="#2196F3" />
+
     <Space
         android:layout_width="match_parent"
-        android:layout_height="206dp" />
+        android:layout_height="26dp" />
 
     <Button
         android:id="@+id/btlistusu"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"
         android:text="LISTAR ALUNOS" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
 
     <Button
         android:id="@+id/btlistusuParam"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"
         android:text="PESQUISAR ALUNO" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
 
     <Button
         android:id = "@+id/btnovousu"
-        android:layout_width = "match_parent"
+        android:layout_width = "200dp"
         android:layout_height = "wrap_content"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"
         android:text = "NOVO ALUNO" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
 
     <TextView
         android:id="@+id/lbUsuLogado"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:text="@string/lbusuariologado" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:background="#00BCD4" />
 
 </LinearLayout>

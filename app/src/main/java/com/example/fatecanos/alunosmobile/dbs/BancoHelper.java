@@ -4,10 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- *
- * @author ProfAlexandre
- */
 public class BancoHelper extends SQLiteOpenHelper{
 
     private static final String NOME_BANCO = "RESGATFATEC.db";

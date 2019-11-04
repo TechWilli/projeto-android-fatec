@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FatecMobile</string>
+    <string name="app_name">AlunosFatec</string> <!--FatecMobile-->
     <string name="action_settings">Settings</string>
     <string name="btentrar">Entrar</string>
     <string name="btlistarTodos">Listar Alunos</string>
