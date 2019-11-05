@@ -13,7 +13,7 @@ import com.example.fatecanos.alunosmobile.modelos.UsuarioBean;
 public class MenuActivity extends AppCompatActivity {
 
     Button addUsu, listUsu, listUsuPar;
-    TextView textUsuLogado;
+    //TextView textUsuLogado;
     UsuarioBean usuLogado;
 
     @Override
@@ -22,9 +22,10 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         Intent it = getIntent();
         usuLogado = (UsuarioBean) it.getSerializableExtra("UsuarioLogado");
+
         listUsu = (Button) findViewById(R.id.btlistusu);
-        textUsuLogado = (TextView) findViewById(R.id.lbUsuLogado);
-        textUsuLogado.setText(usuLogado.getLogin());
+        //textUsuLogado = (TextView) findViewById(R.id.lbUsuLogado);
+        //textUsuLogado.setText(usuLogado.getLogin());
         listUsu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(MenuActivity.this, ListUsuActivity.class);

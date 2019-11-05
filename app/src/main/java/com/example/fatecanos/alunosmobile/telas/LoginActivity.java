@@ -36,19 +36,19 @@ public class LoginActivity extends AppCompatActivity {
         usuEnt.setLogin(slogin);
         usuEnt.setSenha(ssenha);
 
-        addUsu = (Button) findViewById(R.id.btnovousu);
+        /*addUsu = (Button) findViewById(R.id.btnovousu);
         addUsu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(LoginActivity.this, AddUsuActivity.class);
                 startActivity(it);
             }
-        });
+        });*/
 
         entrar = (Button) findViewById(R.id.btentrar);
         entrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 usuSai = ge.validarUsuarios(usuEnt);
-                Intent it = new Intent(LoginActivity.this, MenuActivity.class);
+                Intent it = new Intent(LoginActivity.this, PreMenuActivity.class);
                 it.putExtra("UsuarioLogado",usuSai);
                 startActivity(it);
             }

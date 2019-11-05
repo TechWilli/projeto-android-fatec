@@ -21,5 +21,10 @@
     <string name="title_activity_list_usu">ListUsuActivity</string>
     <string name="title_activity_upt_usu">UptUsuActivity</string>
     <string name="title_activity_list_usu_param">ListUsuParamActivity</string>
+    <string name="title_activity_pre_menu">PreMenuActivity</string>
+
+
+    <string name="btareaalunos">Area Aluno</string>
+    <string name="areadisciplinas">Area Disciplina</string>>
 
 </resources>

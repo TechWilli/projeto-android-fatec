@@ -8,7 +8,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="102dp"
+        android:layout_height="125dp"
         android:background="#2196F3" />
 
     <Space
@@ -57,13 +57,13 @@
         android:layout_width="match_parent"
         android:layout_height="11dp" />
 
-    <Button
+    <!--<Button
         android:id="@+id/btnovousu"
         android:layout_width="500px"
         android:layout_height="wrap_content"
         android:background="#3F51B5"
         android:textColor="#FFFFFF"
-        android:text="NOVO ALUNO" />
+        android:text="NOVO ALUNO" />-->
 
     <Space
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="278dp"
+        android:layout_height="308dp"
         android:background="#00BCD4" />
 
 </LinearLayout>
