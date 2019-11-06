@@ -14,7 +14,12 @@ public class BancoHelper extends SQLiteOpenHelper{
 
     public BancoHelper(Context context) {
         super(context, NOME_BANCO, null, VERSAO_SCHEMA);
-        this.S_CREATE = "CREATE TABLE USUARIOS (ID INTEGER PRIMARY KEY AUTOINCREMENT,LOGIN TEXT,SENHA TEXT,STATUS TEXT,TIPO TEXT);";
+        this.S_CREATE = "CREATE TABLE USUARIOS " +
+                "(ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "LOGIN TEXT, " +
+                "SENHA TEXT, " +
+                "STATUS TEXT, " +
+                "TIPO TEXT);";
     }
 
     @Override

@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="93dp"
-        android:background="#2196F3" />
+        android:background="#416D42" />
 
     <Space
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
         android:id="@+id/btinserir"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="#3F51B5"
+        android:background="#027E72"
         android:textColor="#FFFFFF"
         android:text="@string/btinserir" />
 
@@ -72,7 +72,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="267dp"
-        android:background="#00BCD4" />
+        android:background="#4CAF50" />
 
 </LinearLayout>
 

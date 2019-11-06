@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="125dp"
-        android:background="#2196F3" />
+        android:background="#3C3A3A" />
 
     <Space
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="28dp" />
 
     <Button
         android:id="@+id/btentrar"
@@ -52,10 +52,6 @@
         android:background="#000000"
         android:textColor="#FFFFFF"
         android:text="@string/btentrar" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="11dp" />
 
     <!--<Button
         android:id="@+id/btnovousu"
@@ -72,6 +68,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="308dp"
-        android:background="#00BCD4" />
+        android:background="#686666" />
 
 </LinearLayout>

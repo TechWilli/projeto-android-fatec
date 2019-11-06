@@ -8,11 +8,10 @@ import android.widget.Button;
 //import android.widget.TextView;
 
 import com.example.fatecanos.alunosmobile.R;
-import com.example.fatecanos.alunosmobile.modelos.UsuarioBean;
 
 public class PreMenuActivity extends AppCompatActivity {
 
-    Button areaAluno;
+    Button areaAluno, areaDisciplina, areaNota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,23 @@ public class PreMenuActivity extends AppCompatActivity {
         areaAluno = (Button) findViewById(R.id.btareaalunos);
         areaAluno.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(PreMenuActivity.this, MenuActivity.class);
+                Intent it = new Intent(PreMenuActivity.this, AluMenuActivity.class);
+                startActivity(it);
+            }
+        });
+
+        areaDisciplina = (Button) findViewById(R.id.btareadisciplinas);
+        areaDisciplina.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(PreMenuActivity.this, DisMenuActivity.class);
+                startActivity(it);
+            }
+        });
+
+        areaNota = (Button) findViewById(R.id.btareanotas);
+        areaNota.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(PreMenuActivity.this, NotaMenuActivity.class);
                 startActivity(it);
             }
         });

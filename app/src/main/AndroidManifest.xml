@@ -24,8 +24,8 @@
             android:label="@string/title_activity_add_usu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.fatecanos.alunosmobile.telas.MenuActivity"
-            android:label="@string/title_activity_menu"
+            android:name="com.example.fatecanos.alunosmobile.telas.AluMenuActivity"
+            android:label="@string/title_activity_alu_menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.fatecanos.alunosmobile.telas.ListUsuActivity"
@@ -42,6 +42,14 @@
         <activity
             android:name="com.example.fatecanos.alunosmobile.telas.PreMenuActivity"
             android:label="@string/title_activity_pre_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.DisMenuActivity"
+            android:label="@string/title_activity_dis_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.NotaMenuActivity"
+            android:label="@string/title_activity_nota_menu"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
     </application>

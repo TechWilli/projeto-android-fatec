@@ -9,57 +9,52 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="175dp"
-        android:background="#3C3A3A" />
+        android:background="#2196F3" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="26dp" />
 
     <Button
-        android:id="@+id/btareaalunos"
+        android:id="@+id/btlistnota"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="#000000"
+        android:background="#3F51B5"
         android:textColor="#FFFFFF"
-        android:text="@string/btareaalunos" />
+        android:text="@string/btlistnota" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="24dp" />
 
     <Button
-        android:id="@+id/btareadisciplinas"
+        android:id="@+id/btlistnotaParam"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="#000000"
+        android:background="#3F51B5"
         android:textColor="#FFFFFF"
-        android:text="@string/btareadisciplinas" />
+        android:text="@string/btlistnotaParam" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="24dp" />
 
     <Button
-        android:id="@+id/btareanotas"
+        android:id="@+id/btnovanota"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="#000000"
+        android:background="#3F51B5"
         android:textColor="#FFFFFF"
-        android:text="@string/btareanotas" />
+        android:text="@string/btnovanota" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="24dp" />
 
-    <!--<TextView
-        android:id="@+id/lbUsuLogado"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:text="@string/lbusuariologado" />-->
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="314dp"
-        android:background="#686666" />
+        android:background="#00BCD4" />
 
 </LinearLayout>

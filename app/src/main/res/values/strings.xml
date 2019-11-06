@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">AlunosFatec</string> <!--FatecMobile-->
+    <string name="app_name">AlunosFatec</string>
     <string name="action_settings">Settings</string>
+
     <string name="btentrar">Entrar</string>
+
+    <!--Aluno-->
     <string name="btlistarTodos">Listar Alunos</string>
     <string name="btlistarParam">Pesquisar Aluno</string>
     <string name="btpesquisar">Pesquisar</string>
@@ -9,22 +12,65 @@
     <string name="btalterar">Alterar</string>
     <string name="btexcluir">Excluir</string>
     <string name="btnovousu">Novo Aluno</string>
-    <string name="btsalvar">Salvar</string>
+
+    <string name="lbid">Id</string>
     <string name="lblogin">Login</string>
     <string name="lbsenha">Senha</string>
     <string name="lbtipo">Tipo</string>
     <string name="lbstatus">Status</string>
-    <string name="lbid">Id</string>
-    <string name="lbusuariologado">UsuarioLogado</string>
-    <string name="title_activity_add_usu">AddUsuActivity</string>
-    <string name="title_activity_menu">MenuActivity</string>
-    <string name="title_activity_list_usu">ListUsuActivity</string>
-    <string name="title_activity_upt_usu">UptUsuActivity</string>
-    <string name="title_activity_list_usu_param">ListUsuParamActivity</string>
+
+    <!--Disciplina-->
+    <string name="btlistdis">Listar Disciplinas</string>
+    <string name="btlistdisParam">Pesquisar Disciplina</string>
+    <string name="btnovadis">Nova Disciplina</string>
+    <string name="btpesquisardis">Pesquisar</string>
+    <string name="btinserirdis">Inserir</string>
+    <string name="btalterardis">Alterar</string>
+    <string name="btexcluirdis">Excluir</string>
+
+    <string name="lbiddis">Id</string>
+    <string name="lbnomedis">Disciplina</string>
+    <string name="lbprof">Professor</string>
+    <string name="lbcurso">Curso</string>
+    <string name="lbperiodo">Periodo</string>
+
+    <!--Nota-->
+    <string name="btlistnota">Listar Notas</string>
+    <string name="btlistnotaParam">Situação Final</string>
+    <string name="btnovanota">Nova Nota</string>
+    <string name="btpesquisarnota">Pesquisar</string>
+    <string name="btinserirnota">Inserir</string>
+    <string name="btalterarnota">Alterar</string>
+    <string name="btexcluirnota">Excluir</string>
+
+    <!--Activity-->
     <string name="title_activity_pre_menu">PreMenuActivity</string>
+    <string name="title_activity_alu_menu">AluMenuActivity</string>
+    <string name="title_activity_dis_menu">DisMenuActivity</string>
+    <string name="title_activity_nota_menu">NotaMenuActivity</string>
 
+    <string name="title_activity_add_usu">AddUsuActivity</string>
+    <string name="title_activity_list_usu">ListUsuActivity</string>
+    <string name="title_activity_list_usu_param">ListUsuParamActivity</string>
+    <string name="title_activity_upt_usu">UptUsuActivity</string>
 
+    <string name="title_activity_add_dis">AddDisActivity</string>
+    <string name="title_activity_list_dis">ListDisActivity</string>
+    <string name="title_activity_list_dis_param">ListDisParamActivity</string>
+    <string name="title_activity_upt_dis">UptDisActivity</string>
+
+    <string name="title_activity_add_nota">AddNotaActivity</string>
+    <string name="title_activity_list_nota">ListNotaActivity</string>
+    <string name="title_activity_list_nota_param">ListNotaParamActivity</string>
+    <string name="title_activity_upt_nota">UptNotaActivity</string>
+
+    <!--Botoes pre menu-->
     <string name="btareaalunos">Area Aluno</string>
-    <string name="areadisciplinas">Area Disciplina</string>>
+    <string name="btareadisciplinas">Area Disciplina</string>
+    <string name="btareanotas">Area Nota</string>
+
+    <!--outros-->
+    <string name="lbusuariologado">UsuarioLogado</string>
+    <string name="btsalvar">Salvar</string>
 
 </resources>
