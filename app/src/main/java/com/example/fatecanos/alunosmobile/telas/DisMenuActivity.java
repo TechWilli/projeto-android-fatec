@@ -21,7 +21,7 @@ public class DisMenuActivity extends AppCompatActivity{
         listDis = (Button) findViewById(R.id.btlistdis);
         listDis.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(DisMenuActivity.this, ListUsuActivity.class);
+                Intent it = new Intent(DisMenuActivity.this, ListDisActivity.class);
                 startActivity(it);
             }
         });
@@ -29,7 +29,7 @@ public class DisMenuActivity extends AppCompatActivity{
         listDisPar = (Button) findViewById(R.id.btlistdisParam);
         listDisPar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(DisMenuActivity.this, ListUsuParamActivity.class);
+                Intent it = new Intent(DisMenuActivity.this, ListDisParamActivity.class);
                 startActivity(it);
             }
         });
@@ -37,7 +37,7 @@ public class DisMenuActivity extends AppCompatActivity{
         addDis = (Button) findViewById(R.id.btnovadis);
         addDis.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(DisMenuActivity.this, AddUsuActivity.class);
+                Intent it = new Intent(DisMenuActivity.this, AddDisActivity.class);
                 startActivity(it);
             }
         });

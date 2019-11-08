@@ -24,10 +24,6 @@
             android:label="@string/title_activity_add_usu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.fatecanos.alunosmobile.telas.AluMenuActivity"
-            android:label="@string/title_activity_alu_menu"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name="com.example.fatecanos.alunosmobile.telas.ListUsuActivity"
             android:label="@string/title_activity_list_usu"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -39,10 +35,52 @@
             android:name="com.example.fatecanos.alunosmobile.telas.ListUsuParamActivity"
             android:label="@string/title_activity_list_usu_param"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.AddDisActivity"
+            android:label="@string/title_activity_add_dis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.ListDisActivity"
+            android:label="@string/title_activity_list_dis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.UptDisActivity"
+            android:label="@string/title_activity_upt_dis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.ListDisParamActivity"
+            android:label="@string/title_activity_list_dis_param"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.AddNotaActivity"
+            android:label="@string/title_activity_add_nota"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.ListNotaActivity"
+            android:label="@string/title_activity_list_nota"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.UptNotaActivity"
+            android:label="@string/title_activity_upt_nota"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.ListNotaParamActivity"
+            android:label="@string/title_activity_list_nota_param"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
         <activity
             android:name="com.example.fatecanos.alunosmobile.telas.PreMenuActivity"
             android:label="@string/title_activity_pre_menu"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.example.fatecanos.alunosmobile.telas.AluMenuActivity"
+            android:label="@string/title_activity_alu_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.fatecanos.alunosmobile.telas.DisMenuActivity"
             android:label="@string/title_activity_dis_menu"

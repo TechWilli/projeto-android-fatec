@@ -52,7 +52,6 @@ public class UsuarioBean implements Serializable {
 
     @Override
     public String toString() {
-        return "\n" + "ID: " + id + "\nLOGIN: " + login + "\nSENHA: " + senha + "\nSTATUS: " + status + "\nTIPO: " + tipo + '\n';
-    }
-
+        return "\n" + "ID: " + id + "\nLOGIN: " + login + "\nSENHA: " + senha + "\nSTATUS: " + status +
+                "\nTIPO: " + tipo + '\n'; }
 }

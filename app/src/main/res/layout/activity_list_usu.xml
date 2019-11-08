@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:gravity="center"
-        android:text="RESULTADOS DA PESQUISA:" />
+        android:text="RESULTADOS DA PESQUISA DE ALUNOS:" />
 
     <ListView
         android:id="@+id/listausu"

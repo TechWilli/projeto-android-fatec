@@ -35,15 +35,15 @@ public class ControllerUsuario {
         db.close();
 
         if (resultado == -1) {
-            retorno = "Erro ao inserir registro";
+            retorno = "Erro ao inserir aluno";
         } else {
-            retorno = "Registro Inserido com sucesso";
+            retorno = "Aluno Inserido com sucesso";
         }
         return retorno;
     }
 
     public String excluir(UsuarioBean usu) {
-        String retorno = "Resgistro Excluir com Sucesso";
+        String retorno = "Aluno Excluido com Sucesso";
         String where = "ID = " + usu.getId();
         db = dbHelper.getReadableDatabase();
         db.delete(BancoHelper.TABELA,where,null);
@@ -54,7 +54,7 @@ public class ControllerUsuario {
     public String alterar(UsuarioBean usu) {
         db = dbHelper.getWritableDatabase();
         ContentValues valores;
-        String retorno = "Registro Alterado com sucesso";
+        String retorno = "Aluno Alterado com sucesso";
         String where = "ID = " + usu.getId();
         valores = new ContentValues();
         valores.put("LOGIN", usu.getLogin());
