@@ -1,5 +1,6 @@
 package com.example.fatecanos.alunosmobile.telas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,5 +12,50 @@ import com.example.fatecanos.alunosmobile.R;
 import com.example.fatecanos.alunosmobile.dbs.ControllerNota;
 import com.example.fatecanos.alunosmobile.modelos.NotaBean;
 
-public class UptNotaActivity extends AppCompatActivity{
+public class UptNotaActivity extends AppCompatActivity {
+
+    Button uptNota, delNota;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_upt_nota);
+        final ControllerNota no = new ControllerNota(getBaseContext());
+        final EditText nomealuno = (EditText) findViewById(R.id.nomealuno);
+        final EditText p1 = (EditText) findViewById(R.id.p1);
+        final EditText p2 = (EditText) findViewById(R.id.p2);
+        final EditText sitfinal = (EditText) findViewById(R.id.sitfinal);
+        Intent it = getIntent();
+        final NotaBean recuperado = (NotaBean) it.getSerializableExtra("Nota");
+        nomealuno.setText(recuperado.getNomeAluno());
+        p1.setText(recuperado.getP1());
+        p2.setText(recuperado.getP2());
+        sitfinal.setText(recuperado.getSitFinal());
+
+        uptNota = (Button) findViewById(R.id.btalterarnota);
+        uptNota.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String nomeAlunoString = nomealuno.getText().toString();
+                String p1String = p1.getText().toString();
+                String p2String = p2.getText().toString();
+                String sitFinalString = sitfinal.getText().toString();
+                recuperado.setNomeAluno(nomeAlunoString);
+                recuperado.setP1(p1String);
+                recuperado.setP2(p2String);
+                recuperado.setSitFinal(sitFinalString);
+                String msg = no.alterar(recuperado);
+                Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+            }
+        });
+
+        delNota = (Button) findViewById(R.id.btexcluirnota);
+        delNota.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String msg = no.excluir(recuperado);
+                Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+    }
 }

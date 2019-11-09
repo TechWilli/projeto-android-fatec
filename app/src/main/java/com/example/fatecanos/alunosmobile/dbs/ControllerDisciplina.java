@@ -43,7 +43,7 @@ public class ControllerDisciplina {
     }
 
     public String excluir(DisciplinaBean dis) {
-        String retorno = "Disciplina Excluido com Sucesso";
+        String retorno = "Disciplina Excluida com Sucesso";
         String where = "ID = " + dis.getId();
         db = dbHelper.getReadableDatabase();
         db.delete(BancoHelper.TABELA_DIS,where,null);
@@ -88,7 +88,7 @@ public class ControllerDisciplina {
     public List<DisciplinaBean> listarDisciplinas(DisciplinaBean disEnt) {
         List<DisciplinaBean> disciplinas = new ArrayList<DisciplinaBean>();
         String parametro = disEnt.getProf();
-        String selectQuery = "SELECT ID, DISCIPLINA, PROFESSOR, CURSO, PERIODO FROM DISCIPLINAS WHERE PROF LIKE ?" ;
+        String selectQuery = "SELECT ID, DISCIPLINA, PROFESSOR, CURSO, PERIODO FROM DISCIPLINAS WHERE PROFESSOR LIKE ?" ;
         String[] whereArgs = new String[] { "%" + parametro + "%"  };
         db = dbHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, whereArgs);

@@ -21,7 +21,7 @@ public class NotaMenuActivity extends AppCompatActivity{
         listNota = (Button) findViewById(R.id.btlistnota);
         listNota.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(NotaMenuActivity.this, ListUsuActivity.class);
+                Intent it = new Intent(NotaMenuActivity.this, ListNotaActivity.class);
                 startActivity(it);
             }
         });
@@ -29,7 +29,7 @@ public class NotaMenuActivity extends AppCompatActivity{
         listNotaPar = (Button) findViewById(R.id.btlistnotaParam);
         listNotaPar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(NotaMenuActivity.this, ListUsuParamActivity.class);
+                Intent it = new Intent(NotaMenuActivity.this, ListNotaParamActivity.class);
                 startActivity(it);
             }
         });
@@ -37,7 +37,7 @@ public class NotaMenuActivity extends AppCompatActivity{
         addNota = (Button) findViewById(R.id.btnovanota);
         addNota.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(NotaMenuActivity.this, AddUsuActivity.class);
+                Intent it = new Intent(NotaMenuActivity.this, AddNotaActivity.class);
                 startActivity(it);
             }
         });

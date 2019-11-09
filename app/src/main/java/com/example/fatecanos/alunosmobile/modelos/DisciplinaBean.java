@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class DisciplinaBean implements Serializable {
 
-    String id;
-    String disciplina;
-    String prof;
-    String curso;
-    String periodo;
+    private String id;
+    private String disciplina;
+    private String prof;
+    private String curso;
+    private String periodo;
 
     public String getId() {
         return id;

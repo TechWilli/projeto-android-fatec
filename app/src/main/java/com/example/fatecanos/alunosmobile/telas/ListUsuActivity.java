@@ -42,7 +42,7 @@ public class ListUsuActivity extends AppCompatActivity implements AdapterView.On
             Intent it = new Intent(ListUsuActivity.this, UptUsuActivity.class);
             it.putExtra("Usuario",usu);
             startActivity(it);
-            Toast.makeText(getApplicationContext(),"Item Pressionado :-" + position + " ID= " + usu.getId(),Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),"Item Pressionado :-" + position + " ID= " + usu.getId(),Toast.LENGTH_LONG).show();
             return true;
         }
 
@@ -53,6 +53,6 @@ public class ListUsuActivity extends AppCompatActivity implements AdapterView.On
             Intent it = new Intent(ListUsuActivity.this, UptUsuActivity.class);
             it.putExtra("Usuario",usu);
             startActivity(it);
-            Toast.makeText(getApplicationContext(),"Item Click :-" + position + " ID= " + usu.getId(),Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),"Item Click :-" + position + " ID= " + usu.getId(),Toast.LENGTH_LONG).show();
         }
     }

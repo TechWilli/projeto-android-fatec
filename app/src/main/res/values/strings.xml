@@ -43,6 +43,12 @@
     <string name="btalterarnota">Alterar</string>
     <string name="btexcluirnota">Excluir</string>
 
+    <string name="lbidnota">Id</string>
+    <string name="lbnomealuno">Aluno</string>
+    <string name="lbp1">P1</string>
+    <string name="lbp2">P2</string>
+    <string name="lbsitfinal">Situaçao Final</string>
+
     <!--Activity-->
     <string name="title_activity_pre_menu">PreMenuActivity</string>
     <string name="title_activity_alu_menu">AluMenuActivity</string>

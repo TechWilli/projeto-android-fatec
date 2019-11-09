@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class UsuarioBean implements Serializable {
 
-    String id;
-    String login;
-    String senha;
-    String status;
-    String tipo;
+    private String id;
+    private String login;
+    private String senha;
+    private String status;
+    private String tipo;
 
     public String getId() {
         return id;
