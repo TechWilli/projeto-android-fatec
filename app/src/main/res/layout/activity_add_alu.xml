@@ -8,12 +8,12 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="93dp"
         android:background="#416D42" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="15dp" />
+        android:layout_height="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,69 +22,57 @@
 
     <EditText
         android:id = "@+id/login"
-        android:layout_width = "200dp"
+        android:layout_width="200dp"
         android:layout_height = "wrap_content"
         android:inputType = "text" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lbsenha"/>
-
     <EditText
         android:id = "@+id/senha"
         android:layout_width = "200dp"
         android:layout_height = "wrap_content"
         android:inputType = "textPassword" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lbstatus"/>
-
+        android:text="@string/lbra"/>
     <EditText
-        android:id = "@+id/status"
+        android:id = "@+id/ra"
+        android:layout_width = "200dp"
+        android:layout_height = "wrap_content"
+        android:inputType = "text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbcurso"/>
+    <EditText
+        android:id = "@+id/curso"
         android:layout_width = "200dp"
         android:layout_height = "wrap_content"
         android:inputType = "text" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <Button
+        android:id="@+id/btinserir"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/lbtipo"/>
-
-    <EditText
-        android:id = "@+id/tipo"
-        android:layout_width = "200dp"
-        android:layout_height = "wrap_content"
-        android:inputType = "text" />
-    <Button
-        android:id = "@+id/btalterar"
-        android:layout_width = "200dp"
-        android:layout_height = "wrap_content"
         android:background="#027E72"
         android:textColor="#FFFFFF"
-        android:text = "@string/btalterar" />
+        android:text="@string/btinserir" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="16dp" />
-
-    <Button
-        android:id = "@+id/btexcluir"
-        android:layout_width = "200dp"
-        android:layout_height = "wrap_content"
-        android:background="#027E72"
-        android:textColor="#FFFFFF"
-        android:text = "@string/btexcluir" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="16dp" />
+        android:layout_height="28dp" />
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="267dp"
         android:background="#4CAF50" />
 
 </LinearLayout>
+

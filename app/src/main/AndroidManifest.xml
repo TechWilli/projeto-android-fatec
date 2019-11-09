@@ -20,20 +20,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.fatecanos.alunosmobile.telas.AddUsuActivity"
-            android:label="@string/title_activity_add_usu"
+            android:name="com.example.fatecanos.alunosmobile.telas.AddAluActivity"
+            android:label="@string/title_activity_add_alu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.fatecanos.alunosmobile.telas.ListUsuActivity"
-            android:label="@string/title_activity_list_usu"
+            android:name="com.example.fatecanos.alunosmobile.telas.ListAluActivity"
+            android:label="@string/title_activity_list_alu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.fatecanos.alunosmobile.telas.UptUsuActivity"
-            android:label="@string/title_activity_upt_usu"
+            android:name="com.example.fatecanos.alunosmobile.telas.UptAluActivity"
+            android:label="@string/title_activity_upt_alu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.fatecanos.alunosmobile.telas.ListUsuParamActivity"
-            android:label="@string/title_activity_list_usu_param"
+            android:name="com.example.fatecanos.alunosmobile.telas.ListAluParamActivity"
+            android:label="@string/title_activity_list_alu_param"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
 

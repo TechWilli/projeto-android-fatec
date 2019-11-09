@@ -2,13 +2,13 @@ package com.example.fatecanos.alunosmobile.modelos;
 
 import java.io.Serializable;
 
-public class UsuarioBean implements Serializable {
+public class AlunoBean implements Serializable {
 
     private String id;
     private String login;
     private String senha;
-    private String status;
-    private String tipo;
+    private String ra;
+    private String curso;
 
     public String getId() {
         return id;
@@ -34,24 +34,24 @@ public class UsuarioBean implements Serializable {
         this.senha = senha;
     }
 
-    public String getStatus() {
-        return status;
+    public String getRa() {
+        return ra;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setRa(String ra) {
+        this.ra = ra;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getCurso() {
+        return curso;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 
     @Override
     public String toString() {
-        return "\n" + "ID: " + id + "\nLOGIN: " + login + "\nSENHA: " + senha + "\nSTATUS: " + status +
-                "\nTIPO: " + tipo + '\n'; }
+        return "\n" + "ID: " + id + "\nLOGIN: " + login + "\nSENHA: " + senha + "\nRA: " + ra +
+                "\nCURSO: " + curso + '\n'; }
 }

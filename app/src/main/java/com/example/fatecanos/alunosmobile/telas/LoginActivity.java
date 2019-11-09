@@ -7,24 +7,24 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.content.Intent;
 
-import com.example.fatecanos.alunosmobile.dbs.ControllerUsuario;
-import com.example.fatecanos.alunosmobile.modelos.UsuarioBean;
+import com.example.fatecanos.alunosmobile.dbs.ControllerAluno;
+import com.example.fatecanos.alunosmobile.modelos.AlunoBean;
 import com.example.fatecanos.alunosmobile.R;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText login,senha;
-    Button addUsu, entrar;
+    Button addAlu, entrar;
     String slogin;
     String ssenha;
-    UsuarioBean usuEnt;
-    UsuarioBean usuSai;
+    AlunoBean aluEnt;
+    AlunoBean aluSai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        final ControllerUsuario ge = new ControllerUsuario(getBaseContext());
+        final ControllerAluno ge = new ControllerAluno(getBaseContext());
 
         login = (EditText) findViewById(R.id.login);
         senha = (EditText) findViewById(R.id.senha);
@@ -32,14 +32,14 @@ public class LoginActivity extends AppCompatActivity {
         slogin = login.getText().toString();
         ssenha = senha.getText().toString();
 
-        usuEnt = new UsuarioBean();
-        usuEnt.setLogin(slogin);
-        usuEnt.setSenha(ssenha);
+        aluEnt = new AlunoBean();
+        aluEnt.setLogin(slogin);
+        aluEnt.setSenha(ssenha);
 
-        /*addUsu = (Button) findViewById(R.id.btnovousu);
-        addUsu.setOnClickListener(new View.OnClickListener() {
+        /*addAlu = (Button) findViewById(R.id.btnovoalu);
+        addAlu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(LoginActivity.this, AddUsuActivity.class);
+                Intent it = new Intent(LoginActivity.this, AddAluActivity.class);
                 startActivity(it);
             }
         });*/
@@ -47,9 +47,9 @@ public class LoginActivity extends AppCompatActivity {
         entrar = (Button) findViewById(R.id.btentrar);
         entrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                usuSai = ge.validarUsuarios(usuEnt);
+                aluSai = ge.validarAlunos(aluEnt);
                 Intent it = new Intent(LoginActivity.this, PreMenuActivity.class);
-                it.putExtra("UsuarioLogado",usuSai);
+                it.putExtra("AlunoLogado",aluSai);
                 startActivity(it);
             }
         });

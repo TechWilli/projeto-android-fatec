@@ -52,10 +52,10 @@
         android:layout_height="24dp" />
 
     <!--<TextView
-        android:id="@+id/lbUsuLogado"
+        android:id="@+id/lbAluLogado"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:text="@string/lbusuariologado" />-->
+        android:text="@string/lbalunologado" />-->
 
     <FrameLayout
         android:layout_width="match_parent"

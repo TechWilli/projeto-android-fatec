@@ -54,7 +54,7 @@
         android:text="@string/btentrar" />
 
     <!--<Button
-        android:id="@+id/btnovousu"
+        android:id="@+id/btnovoalu"
         android:layout_width="500px"
         android:layout_height="wrap_content"
         android:background="#3F51B5"

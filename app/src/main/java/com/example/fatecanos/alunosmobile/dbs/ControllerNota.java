@@ -106,38 +106,38 @@ public class ControllerNota {
         return notas;
     }
 
-    /*public UsuarioBean validarUsuarios(UsuarioBean usuEnt) {
-        UsuarioBean usu = new UsuarioBean();
-        String loginPar = '"' + usuEnt.getLogin().trim() + '"';
-        String senhaPar = '"' + usuEnt.getSenha().trim() + '"';
-        String selectQuery = "SELECT ID, LOGIN, SENHA, STATUS, TIPO FROM USUARIOS WHERE LOGIN = ? AND SENHA = ? " ;
+    /*public AlunoBean validarAlunos(AlunoBean aluEnt) {
+        AlunoBean alu = new AlunoBean();
+        String loginPar = '"' + aluEnt.getLogin().trim() + '"';
+        String senhaPar = '"' + aluEnt.getSenha().trim() + '"';
+        String selectQuery = "SELECT ID, LOGIN, SENHA, RA, CURSO FROM ALUNOS WHERE LOGIN = ? AND SENHA = ? " ;
         String[] whereArgs = new String [] {loginPar,senhaPar};
         db = dbHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, whereArgs);
-        usu.setLogin("0 = " + loginPar + "1 = " +senhaPar);
+        alu.setLogin("0 = " + loginPar + "1 = " +senhaPar);
         if (cursor.moveToFirst()) {
             do {
-                usu.setId(""+cursor.getInt(0));
-                usu.setLogin(cursor.getString(1));
-                usu.setSenha(cursor.getString(2));
-                usu.setStatus(cursor.getString(3));
-                usu.setTipo(cursor.getString(4));
+                alu.setId(""+cursor.getInt(0));
+                alu.setLogin(cursor.getString(1));
+                alu.setSenha(cursor.getString(2));
+                alu.setRa(cursor.getString(3));
+                alu.setCurso(cursor.getString(4));
             } while (cursor.moveToNext());
         }
-        return usu;
+        return alu;
     }
 
-    public List<UsuarioBean> listarUsuariosTeste() {
-        List<UsuarioBean> usuarios = new ArrayList<UsuarioBean>();
+    public List<AlunoBean> listarAlunosTeste() {
+        List<AlunoBean> alunos = new ArrayList<AlunoBean>();
         for (int i = 0; i < 10; i++ ) {
-            UsuarioBean usu = new UsuarioBean();
-            usu.setId(" Id " + i);
-            usu.setLogin(" Login " + i);
-            usu.setSenha(" Senha " + i);
-            usu.setStatus(" Status " + i);
-            usu.setTipo(" Tipo " + i);
-            usuarios.add(usu);
+            AlunoBean alu = new AlunoBean();
+            alu.setId(" Id " + i);
+            alu.setLogin(" Login " + i);
+            alu.setSenha(" Senha " + i);
+            alu.setRa(" Ra " + i);
+            alu.setCurso(" Curso " + i);
+            alunos.add(alu);
         }
-        return usuarios;
+        return alunos;
     }*/
 }

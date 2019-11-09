@@ -11,13 +11,13 @@
     <string name="btinserir">Inserir</string>
     <string name="btalterar">Alterar</string>
     <string name="btexcluir">Excluir</string>
-    <string name="btnovousu">Novo Aluno</string>
+    <string name="btnovoalu">Novo Aluno</string>
 
     <string name="lbid">Id</string>
     <string name="lblogin">Login</string>
     <string name="lbsenha">Senha</string>
-    <string name="lbtipo">Tipo</string>
-    <string name="lbstatus">Status</string>
+    <string name="lbcurso">Curso</string>
+    <string name="lbra">RA</string>
 
     <!--Disciplina-->
     <string name="btlistdis">Listar Disciplinas</string>
@@ -31,7 +31,7 @@
     <string name="lbiddis">Id</string>
     <string name="lbnomedis">Disciplina</string>
     <string name="lbprof">Professor</string>
-    <string name="lbcurso">Curso</string>
+    <string name="lbcursodis">Curso</string>
     <string name="lbperiodo">Periodo</string>
 
     <!--Nota-->
@@ -55,10 +55,10 @@
     <string name="title_activity_dis_menu">DisMenuActivity</string>
     <string name="title_activity_nota_menu">NotaMenuActivity</string>
 
-    <string name="title_activity_add_usu">AddUsuActivity</string>
-    <string name="title_activity_list_usu">ListUsuActivity</string>
-    <string name="title_activity_list_usu_param">ListUsuParamActivity</string>
-    <string name="title_activity_upt_usu">UptUsuActivity</string>
+    <string name="title_activity_add_alu">AddAluActivity</string>
+    <string name="title_activity_list_alu">ListAluActivity</string>
+    <string name="title_activity_list_alu_param">ListAluParamActivity</string>
+    <string name="title_activity_upt_alu">UptAluActivity</string>
 
     <string name="title_activity_add_dis">AddDisActivity</string>
     <string name="title_activity_list_dis">ListDisActivity</string>
@@ -76,7 +76,7 @@
     <string name="btareanotas">Area Nota</string>
 
     <!--outros-->
-    <string name="lbusuariologado">UsuarioLogado</string>
+    <string name="lbalunologado">AlunoLogado</string>
     <string name="btsalvar">Salvar</string>
 
 </resources>

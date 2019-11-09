@@ -7,43 +7,42 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.fatecanos.alunosmobile.R;
-import com.example.fatecanos.alunosmobile.modelos.UsuarioBean;
 
 public class AluMenuActivity extends AppCompatActivity {
 
-    Button addUsu, listUsu, listUsuPar;
-    //TextView textUsuLogado;
-    //UsuarioBean usuLogado;
+    Button addAlu, listAlu, listAluPar;
+    //TextView textAluLogado;
+    //AlunoBean aluLogado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alu_menu);
         Intent it = getIntent();
-        //usuLogado = (UsuarioBean) it.getSerializableExtra("UsuarioLogado");
+        //aluLogado = (AlunoBean) it.getSerializableExtra("AlunoLogado");
 
-        listUsu = (Button) findViewById(R.id.btlistusu);
-        //textUsuLogado = (TextView) findViewById(R.id.lbUsuLogado);
-        //textUsuLogado.setText(usuLogado.getLogin());
-        listUsu.setOnClickListener(new View.OnClickListener() {
+        listAlu = (Button) findViewById(R.id.btlistalu);
+        //textAluLogado = (TextView) findViewById(R.id.lbAluLogado);
+        //textAluLogado.setText(aluLogado.getLogin());
+        listAlu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(AluMenuActivity.this, ListUsuActivity.class);
+                Intent it = new Intent(AluMenuActivity.this, ListAluActivity.class);
                 startActivity(it);
             }
         });
 
-        listUsuPar = (Button) findViewById(R.id.btlistusuParam);
-        listUsuPar.setOnClickListener(new View.OnClickListener() {
+        listAluPar = (Button) findViewById(R.id.btlistaluParam);
+        listAluPar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(AluMenuActivity.this, ListUsuParamActivity.class);
+                Intent it = new Intent(AluMenuActivity.this, ListAluParamActivity.class);
                 startActivity(it);
             }
         });
 
-        addUsu = (Button) findViewById(R.id.btnovousu);
-        addUsu.setOnClickListener(new View.OnClickListener() {
+        addAlu = (Button) findViewById(R.id.btnovoalu);
+        addAlu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(AluMenuActivity.this, AddUsuActivity.class);
+                Intent it = new Intent(AluMenuActivity.this, AddAluActivity.class);
                 startActivity(it);
             }
         });

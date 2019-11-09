@@ -16,7 +16,7 @@
         android:layout_height="26dp" />
 
     <Button
-        android:id="@+id/btlistusu"
+        android:id="@+id/btlistalu"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="#027E72"
@@ -28,7 +28,7 @@
         android:layout_height="24dp" />
 
     <Button
-        android:id="@+id/btlistusuParam"
+        android:id="@+id/btlistaluParam"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="#027E72"
@@ -40,7 +40,7 @@
         android:layout_height="24dp" />
 
     <Button
-        android:id = "@+id/btnovousu"
+        android:id = "@+id/btnovoalu"
         android:layout_width = "200dp"
         android:layout_height = "wrap_content"
         android:background="#027E72"
@@ -52,10 +52,10 @@
         android:layout_height="24dp" />
 
     <!--<TextView
-        android:id="@+id/lbUsuLogado"
+        android:id="@+id/lbAluLogado"
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:text="@string/lbusuariologado" />-->
+        android:text="@string/lbalunologado" />-->
 
     <FrameLayout
         android:layout_width="match_parent"

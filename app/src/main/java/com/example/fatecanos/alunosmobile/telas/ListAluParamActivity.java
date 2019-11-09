@@ -13,37 +13,37 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.fatecanos.alunosmobile.R;
-import com.example.fatecanos.alunosmobile.dbs.ControllerUsuario;
-import com.example.fatecanos.alunosmobile.modelos.UsuarioBean;
+import com.example.fatecanos.alunosmobile.dbs.ControllerAluno;
+import com.example.fatecanos.alunosmobile.modelos.AlunoBean;
 
 import java.util.List;
 
-public class ListUsuParamActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener {
+public class ListAluParamActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener {
 
     ListView ListaDeAlunos;
-    List<UsuarioBean> usuarios;
-    Button pesqUsu;
-    ArrayAdapter<UsuarioBean> adapter = null;
+    List<AlunoBean> alunos;
+    Button pesqAlu;
+    ArrayAdapter<AlunoBean> adapter = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_usu_param);
+        setContentView(R.layout.activity_list_alu_param);
         final Context con = getBaseContext();
-        final ControllerUsuario ge = new ControllerUsuario(con);
-        ListaDeAlunos = (ListView) findViewById(R.id.listausu);
+        final ControllerAluno ge = new ControllerAluno(con);
+        ListaDeAlunos = (ListView) findViewById(R.id.listaalu);
         ListaDeAlunos.setOnItemClickListener(this); // Clique no item
         ListaDeAlunos.setOnItemLongClickListener(this); //
         final EditText login = (EditText)findViewById(R.id.login);
 
-        pesqUsu = (Button) findViewById(R.id.btpesquisar);
-        pesqUsu.setOnClickListener(new View.OnClickListener() {
+        pesqAlu = (Button) findViewById(R.id.btpesquisar);
+        pesqAlu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String loginString = login.getText().toString();
-                UsuarioBean usu = new UsuarioBean();
-                usu.setLogin(loginString);
-                usuarios = ge.listarUsuarios(usu);
-                adapter = new ArrayAdapter<UsuarioBean>(con,android.R.layout.simple_list_item_1,usuarios);
+                AlunoBean alu = new AlunoBean();
+                alu.setLogin(loginString);
+                alunos = ge.listarAlunos(alu);
+                adapter = new ArrayAdapter<AlunoBean>(con,android.R.layout.simple_list_item_1,alunos);
                 ListaDeAlunos.setAdapter(adapter);
             }
         });
@@ -53,21 +53,21 @@ public class ListUsuParamActivity extends AppCompatActivity implements AdapterVi
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
         // Código para trabalhar com o item que foi pressionado
         // position é a posição do item no adapter
-        UsuarioBean usu = (UsuarioBean) parent.getItemAtPosition(position);
-        Intent it = new Intent(ListUsuParamActivity.this, UptUsuActivity.class);
-        it.putExtra("Usuario",usu);
+        AlunoBean alu = (AlunoBean) parent.getItemAtPosition(position);
+        Intent it = new Intent(ListAluParamActivity.this, UptAluActivity.class);
+        it.putExtra("Aluno",alu);
         startActivity(it);
-        Toast.makeText(getApplicationContext(),"Item Pressionado :-" + position + " ID= " + usu.getId(),Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Item Pressionado :-" + position + " ID= " + alu.getId(),Toast.LENGTH_LONG).show();
         return true;
     }
 
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         // Código para trabalhar com o item que foi clicado
         // position é a posição do item no adapter
-        UsuarioBean usu = (UsuarioBean) parent.getItemAtPosition(position);
-        Intent it = new Intent(ListUsuParamActivity.this, UptUsuActivity.class);
-        it.putExtra("Usuario",usu);
+        AlunoBean alu = (AlunoBean) parent.getItemAtPosition(position);
+        Intent it = new Intent(ListAluParamActivity.this, UptAluActivity.class);
+        it.putExtra("Aluno",alu);
         startActivity(it);
-        Toast.makeText(getApplicationContext(),"Item Click :-" + position + " ID= " + usu.getId(),Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Item Click :-" + position + " ID= " + alu.getId(),Toast.LENGTH_LONG).show();
     }
 }

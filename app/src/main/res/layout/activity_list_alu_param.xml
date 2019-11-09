@@ -49,7 +49,7 @@
         android:layout_height="14dp" />
 
     <ListView
-        android:id="@+id/listausu"
+        android:id="@+id/listaalu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
