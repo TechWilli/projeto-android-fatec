@@ -17,10 +17,11 @@
 
     <Button
         android:id="@+id/btlistalu"
-        android:layout_width="200dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="#027E72"
+        android:background="@drawable/custom_alu_btns"
         android:textColor="#FFFFFF"
+        android:textSize="20dp"
         android:text="LISTAR ALUNOS" />
 
     <Space
@@ -29,10 +30,11 @@
 
     <Button
         android:id="@+id/btlistaluParam"
-        android:layout_width="200dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="#027E72"
+        android:background="@drawable/custom_alu_btns"
         android:textColor="#FFFFFF"
+        android:textSize="20dp"
         android:text="PESQUISAR ALUNO" />
 
     <Space
@@ -41,10 +43,11 @@
 
     <Button
         android:id = "@+id/btnovoalu"
-        android:layout_width = "200dp"
+        android:layout_width = "320dp"
         android:layout_height = "wrap_content"
-        android:background="#027E72"
+        android:background="@drawable/custom_alu_btns"
         android:textColor="#FFFFFF"
+        android:textSize="20dp"
         android:text = "NOVO ALUNO" />
 
     <Space

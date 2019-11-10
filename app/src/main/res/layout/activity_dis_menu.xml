@@ -17,10 +17,11 @@
 
     <Button
         android:id="@+id/btlistdis"
-        android:layout_width="200dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="#A0140A"
+        android:background="@drawable/custom_dis_btns"
         android:textColor="#FFFFFF"
+        android:textSize="20dp"
         android:text="@string/btlistdis" />
 
     <Space
@@ -29,10 +30,11 @@
 
     <Button
         android:id="@+id/btlistdisParam"
-        android:layout_width="200dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="#A0140A"
+        android:background="@drawable/custom_dis_btns"
         android:textColor="#FFFFFF"
+        android:textSize="20dp"
         android:text="@string/btlistdisParam" />
 
     <Space
@@ -41,10 +43,11 @@
 
     <Button
         android:id="@+id/btnovadis"
-        android:layout_width="200dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="#A0140A"
+        android:background="@drawable/custom_dis_btns"
         android:textColor="#FFFFFF"
+        android:textSize="20dp"
         android:text="@string/btnovadis" />
 
     <Space
