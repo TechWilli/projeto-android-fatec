@@ -44,7 +44,8 @@
     <string name="btexcluirnota">Excluir</string>
 
     <string name="lbidnota">Id</string>
-    <string name="lbnomealuno">Aluno</string>
+    <string name="lbidaluno">ID Aluno</string>
+    <string name="lbiddisciplina">ID Disciplina</string>
     <string name="lbp1">P1</string>
     <string name="lbp2">P2</string>
     <string name="lbsitfinal">Situaçao Final</string>

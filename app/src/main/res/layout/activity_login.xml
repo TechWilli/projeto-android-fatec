@@ -6,20 +6,18 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="#CCC8C8">
+    android:background="#F3EDED">
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="33dp" />
+        android:layout_height="104dp" />
 
     <android.support.design.card.MaterialCardView
-        android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_width="250dp"
+        android:layout_height="430dp"
         app:cardCornerRadius="30dp">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
@@ -27,7 +25,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="60dp" />
+                android:layout_height="27dp" />
 
             <ImageView
                 android:id="@+id/imageView2"

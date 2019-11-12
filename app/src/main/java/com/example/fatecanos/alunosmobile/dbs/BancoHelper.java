@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class BancoHelper extends SQLiteOpenHelper{
 
-    private static final String NOME_BANCO = "ALUNOS_FATECANOS_TESTE3.db"; // na ultima versao deixar só ALUNOSFATECANOS
+    private static final String NOME_BANCO = "ALUNOS_FATECANOS_TESTE5.db"; // banco antigo ALUNOS_FATECANOS_TESTE3.db
 
     public static final String TABELA = "ALUNOS";
     public static final String TABELA_DIS = "DISCIPLINAS";
@@ -36,10 +36,13 @@ public class BancoHelper extends SQLiteOpenHelper{
 
         this.S_CREATE_NOTA = "CREATE TABLE NOTAS " +
                 "(ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "ALUNO TEXT, " +
+                "IDALUNO INTEGER, " +
+                "IDDISCIPLINA INTEGER, " +
                 "P1 TEXT, " +
                 "P2 TEXT, " +
-                "SITFINAL TEXT);";
+                "SITFINAL TEXT, " +
+                "FOREIGN KEY(IDALUNO) REFERENCES ALUNOS(ID), " +
+                "FOREIGN KEY(IDDISCIPLINA) REFERENCES DISCIPLINAS(ID));";
     }
 
     @Override

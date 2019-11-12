@@ -106,38 +106,4 @@ public class ControllerDisciplina {
         return disciplinas;
     }
 
-    /*public AlunoBean validarAlunos(AlunoBean aluEnt) {
-        AlunoBean alu = new AlunoBean();
-        String loginPar = '"' + aluEnt.getLogin().trim() + '"';
-        String senhaPar = '"' + aluEnt.getSenha().trim() + '"';
-        String selectQuery = "SELECT ID, LOGIN, SENHA, RA, CURSO FROM ALUNOS WHERE LOGIN = ? AND SENHA = ? " ;
-        String[] whereArgs = new String [] {loginPar,senhaPar};
-        db = dbHelper.getWritableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, whereArgs);
-        alu.setLogin("0 = " + loginPar + "1 = " +senhaPar);
-        if (cursor.moveToFirst()) {
-            do {
-                alu.setId(""+cursor.getInt(0));
-                alu.setLogin(cursor.getString(1));
-                alu.setSenha(cursor.getString(2));
-                alu.setRa(cursor.getString(3));
-                alu.setCurso(cursor.getString(4));
-            } while (cursor.moveToNext());
-        }
-        return alu;
-    }
-
-    public List<AlunoBean> listarAlunosTeste() {
-        List<AlunoBean> alunos = new ArrayList<AlunoBean>();
-        for (int i = 0; i < 10; i++ ) {
-            AlunoBean alu = new AlunoBean();
-            alu.setId(" Id " + i);
-            alu.setLogin(" Login " + i);
-            alu.setSenha(" Senha " + i);
-            alu.setRa(" Ra " + i);
-            alu.setCurso(" Curso " + i);
-            alunos.add(alu);
-        }
-        return alunos;
-    }*/
 }

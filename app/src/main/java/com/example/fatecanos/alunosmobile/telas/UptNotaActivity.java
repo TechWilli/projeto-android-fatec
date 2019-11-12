@@ -21,13 +21,17 @@ public class UptNotaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upt_nota);
         final ControllerNota no = new ControllerNota(getBaseContext());
-        final EditText nomealuno = (EditText) findViewById(R.id.nomealuno);
+
+        final EditText idaluno = (EditText) findViewById(R.id.idaluno);
+        final EditText iddisciplina = (EditText) findViewById(R.id.iddisciplina);
         final EditText p1 = (EditText) findViewById(R.id.p1);
         final EditText p2 = (EditText) findViewById(R.id.p2);
         final EditText sitfinal = (EditText) findViewById(R.id.sitfinal);
         Intent it = getIntent();
         final NotaBean recuperado = (NotaBean) it.getSerializableExtra("Nota");
-        nomealuno.setText(recuperado.getNomeAluno());
+
+        idaluno.setText(recuperado.getIdAlu());
+        iddisciplina.setText(recuperado.getIdDis());
         p1.setText(recuperado.getP1());
         p2.setText(recuperado.getP2());
         sitfinal.setText(recuperado.getSitFinal());
@@ -35,11 +39,14 @@ public class UptNotaActivity extends AppCompatActivity {
         uptNota = (Button) findViewById(R.id.btalterarnota);
         uptNota.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String nomeAlunoString = nomealuno.getText().toString();
+                String idAlunoString = idaluno.getText().toString();
+                String iddisciplinaString = iddisciplina.getText().toString();
                 String p1String = p1.getText().toString();
                 String p2String = p2.getText().toString();
                 String sitFinalString = sitfinal.getText().toString();
-                recuperado.setNomeAluno(nomeAlunoString);
+
+                recuperado.setIdAlu(idAlunoString);
+                recuperado.setIdDis((iddisciplinaString));
                 recuperado.setP1(p1String);
                 recuperado.setP2(p2String);
                 recuperado.setSitFinal(sitFinalString);

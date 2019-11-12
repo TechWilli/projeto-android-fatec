@@ -8,7 +8,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="93dp"
+        android:layout_height="57dp"
         android:background="#2196F3" />
 
     <Space
@@ -18,10 +18,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lbnomealuno" />
+        android:text="@string/lbidaluno" />
 
     <EditText
-        android:id = "@+id/nomealuno"
+        android:id = "@+id/idaluno"
+        android:layout_width="200dp"
+        android:layout_height = "wrap_content"
+        android:inputType = "text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbiddisciplina" />
+
+    <EditText
+        android:id = "@+id/iddisciplina"
         android:layout_width="200dp"
         android:layout_height = "wrap_content"
         android:inputType = "text" />

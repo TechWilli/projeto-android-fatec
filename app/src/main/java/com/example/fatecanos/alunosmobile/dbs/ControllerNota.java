@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.example.fatecanos.alunosmobile.modelos.AlunoBean;
+import com.example.fatecanos.alunosmobile.modelos.DisciplinaBean;
 import com.example.fatecanos.alunosmobile.modelos.NotaBean;
 
 import java.util.ArrayList;
@@ -27,7 +29,8 @@ public class ControllerNota {
         long resultado;
         String retorno;
         valores = new ContentValues();
-        valores.put("ALUNO", nota.getNomeAluno());
+        valores.put("IDALUNO", nota.getIdAlu());
+        valores.put("IDDISCIPLINA", nota.getIdDis());
         valores.put("P1", nota.getP1());
         valores.put("P2", nota.getP2());
         valores.put("SITFINAL", nota.getSitFinal());
@@ -57,7 +60,8 @@ public class ControllerNota {
         String retorno = "Nota Alterada com sucesso";
         String where = "ID = " + nota.getId();
         valores = new ContentValues();
-        valores.put("ALUNO", nota.getNomeAluno());
+        valores.put("IDALUNO", nota.getIdAlu());
+        valores.put("IDDISCIPLINA", nota.getIdDis());
         valores.put("P1", nota.getP1());
         valores.put("P2", nota.getP2());
         valores.put("SITFINAL", nota.getSitFinal());
@@ -75,10 +79,11 @@ public class ControllerNota {
             do {
                 NotaBean nota = new NotaBean();
                 nota.setId(""+cursor.getInt(0));
-                nota.setNomeAluno(cursor.getString(1));
-                nota.setP1(cursor.getString(2));
-                nota.setP2(cursor.getString(3));
-                nota.setSitFinal(cursor.getString(4));
+                nota.setIdAlu(""+cursor.getInt(1));
+                nota.setIdDis(""+cursor.getInt(2));
+                nota.setP1(cursor.getString(3));
+                nota.setP2(cursor.getString(4));
+                nota.setSitFinal(cursor.getString(5));
                 notas.add(nota);
             } while (cursor.moveToNext());
         }
@@ -88,7 +93,7 @@ public class ControllerNota {
     public List<NotaBean> listarNotas(NotaBean notaEnt) {
         List<NotaBean> notas = new ArrayList<NotaBean>();
         String parametro = notaEnt.getSitFinal();
-        String selectQuery = "SELECT ID, ALUNO, P1, P2, SITFINAL FROM NOTAS WHERE SITFINAL LIKE ?" ;
+        String selectQuery = "SELECT ID, IDALUNO, IDDISCIPLINA, P1, P2, SITFINAL FROM NOTAS WHERE SITFINAL LIKE ?" ;
         String[] whereArgs = new String[] { "%" + parametro + "%"  };
         db = dbHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, whereArgs);
@@ -96,48 +101,15 @@ public class ControllerNota {
             do {
                 NotaBean nota = new NotaBean();
                 nota.setId(""+cursor.getInt(0));
-                nota.setNomeAluno(cursor.getString(1));
-                nota.setP1(cursor.getString(2));
-                nota.setP2(cursor.getString(3));
-                nota.setSitFinal(cursor.getString(4));
+                nota.setIdAlu(""+cursor.getInt(1));
+                nota.setIdDis(""+cursor.getInt(2));
+                nota.setP1(cursor.getString(3));
+                nota.setP2(cursor.getString(4));
+                nota.setSitFinal(cursor.getString(5));
                 notas.add(nota);
             } while (cursor.moveToNext());
         }
         return notas;
     }
 
-    /*public AlunoBean validarAlunos(AlunoBean aluEnt) {
-        AlunoBean alu = new AlunoBean();
-        String loginPar = '"' + aluEnt.getLogin().trim() + '"';
-        String senhaPar = '"' + aluEnt.getSenha().trim() + '"';
-        String selectQuery = "SELECT ID, LOGIN, SENHA, RA, CURSO FROM ALUNOS WHERE LOGIN = ? AND SENHA = ? " ;
-        String[] whereArgs = new String [] {loginPar,senhaPar};
-        db = dbHelper.getWritableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, whereArgs);
-        alu.setLogin("0 = " + loginPar + "1 = " +senhaPar);
-        if (cursor.moveToFirst()) {
-            do {
-                alu.setId(""+cursor.getInt(0));
-                alu.setLogin(cursor.getString(1));
-                alu.setSenha(cursor.getString(2));
-                alu.setRa(cursor.getString(3));
-                alu.setCurso(cursor.getString(4));
-            } while (cursor.moveToNext());
-        }
-        return alu;
-    }
-
-    public List<AlunoBean> listarAlunosTeste() {
-        List<AlunoBean> alunos = new ArrayList<AlunoBean>();
-        for (int i = 0; i < 10; i++ ) {
-            AlunoBean alu = new AlunoBean();
-            alu.setId(" Id " + i);
-            alu.setLogin(" Login " + i);
-            alu.setSenha(" Senha " + i);
-            alu.setRa(" Ra " + i);
-            alu.setCurso(" Curso " + i);
-            alunos.add(alu);
-        }
-        return alunos;
-    }*/
 }

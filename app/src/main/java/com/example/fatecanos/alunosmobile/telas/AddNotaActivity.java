@@ -24,19 +24,22 @@ public class AddNotaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                EditText nomealuno = (EditText) findViewById(R.id.nomealuno);
+                EditText idaluno = (EditText) findViewById(R.id.idaluno);
+                EditText iddisciplina = (EditText) findViewById(R.id.iddisciplina);
                 EditText p1 = (EditText) findViewById((R.id.p1));
                 EditText p2 = (EditText) findViewById(R.id.p2);
                 EditText sitfinal = (EditText) findViewById(R.id.sitfinal);
 
-                String nomeAlunoString = nomealuno.getText().toString();
+                String idAlunoString = idaluno.getText().toString();
+                String iddisciplinaString = iddisciplina.getText().toString();
                 String p1String = p1.getText().toString();
                 String p2String = p2.getText().toString();
                 String sitFinalString = sitfinal.getText().toString();
 
                 NotaBean nota = new NotaBean();
                 nota.setId("");
-                nota.setNomeAluno(nomeAlunoString);
+                nota.setIdAlu(idAlunoString);
+                nota.setIdDis(iddisciplinaString);
                 nota.setP1(p1String);
                 nota.setP2(p2String);
                 nota.setSitFinal(sitFinalString);
